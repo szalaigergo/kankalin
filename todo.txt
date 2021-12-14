@@ -1,0 +1,6 @@
+﻿színek
+demo adatok
+fellépés rendelés gomb, repertoár
+kapcsolat form
+
+RGB: #d7af8c

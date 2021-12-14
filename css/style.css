@@ -1,0 +1,266 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fff; ;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.1;
+    text-align: center;
+    padding: 10px;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    margin: 0.1rem;
+    padding: 0.25rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+p {
+    
+    margin-block-start: .25rem;
+    margin-block-end: .5rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    z-index: 3;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav a {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+}
+nav li:hover {
+    background-color: #444;
+}
+#groups{
+    display: none;
+}
+nav a#openup {
+    display: none;
+}
+.not-allowed{
+    cursor: not-allowed;
+}
+
+/*Főoldal képernyő*/
+#landing-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#landing-container h1{
+    margin:0;
+    padding: 3rem;
+    color: #eeeeee;
+    align-items: center;
+}
+
+/* Hírek -- Aktuális*/
+#futurepast{
+    display: flex;
+}
+#futurepast #past{
+    flex: 2 1 auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+#futurepast #future{
+    flex: 1 1 auto;
+    display: block;
+    overflow: hidden;
+}
+#futurepast h1{
+    margin: auto;
+    padding: 4rem 3rem 3rem 3rem;
+}
+
+.fb-page{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* Aktuális hírek grid*/
+.news-container{
+    /*height: max-content;
+    overflow: auto;*/
+    background: white;
+}
+
+#news-grid{
+    display: grid;
+    margin: 1rem;
+    margin-top: 0;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 350px;    
+    grid-gap: 1rem;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-size: 1.2rem;
+    background: #ddd;
+}
+.test{
+    grid-column: span 2;
+}
+
+.news-pictures{
+    flex: 1;
+    transition: background-size 1s;
+}
+.news-pictures:hover{
+    background-size: 120%;
+}
+.description{
+    flex: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.description > a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1025px) {
+    #news-grid{
+        grid-template-columns: auto auto;
+    }
+    .test{
+        grid-column: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #futurepast{
+
+        flex-direction: column;
+    }
+    #futurepast #future h1{
+        padding-top: 4rem;
+    }
+    #futurepast #past{
+        min-width: auto;
+    }
+    #news-grid{
+        grid-template-columns: auto;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h1 a{
+        display: inline-block;
+        padding: 1.5rem;
+        margin: 0;
+        background: #eee;
+        border: none;
+        border-radius: 15%;
+        box-shadow: grey 2px 2px 2px 2px;
+    }
+
+}
+/* Telefonra*/
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        font-size: 1.25rem;
+        height: auto;
+        border-bottom: 0;
+        z-index: 3;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+
+
+    nav a:hover {
+        background: #444;
+    }
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+
+
+}
+
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
