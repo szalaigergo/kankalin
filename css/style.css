@@ -59,8 +59,11 @@ nav a {
 }
 nav li:hover {
     background-color: #444;
-}
+}/* 
 #groups{
+    display: none;
+} */
+.expendable-items {
     display: none;
 }
 nav a#openup {

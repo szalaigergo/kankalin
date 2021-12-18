@@ -1,7 +1,9 @@
 var map;
-var hq = { lat: 46.41133, lng: 20.311035 };
+var latitude = 46.418543903777504;
+var longitude = 20.347704207038248;
+var hq = { lat: latitude, lng: longitude };
 function initMap() {
-    var hq = { lat: 46.41133, lng: 20.311035 };
+    var hq = { lat: latitude, lng: longitude };
     map = new google.maps.Map(document.getElementById('map'), {
         center: hq,
         zoom: 16

@@ -80,10 +80,17 @@ $(function () {
             menu.slideToggle();
         }
     });*/
+    //Expandable menu items
     $("#us").on("click", function (e) {
         $("#groups").toggle(500);
 
     });
+    $("#tenders-menu").on("click", function (e) {
+        $("#tenders").toggle(500);
+
+    });
+
+
     $(".open-menu").height($(window).height());
 
     var w = $(window).width();
