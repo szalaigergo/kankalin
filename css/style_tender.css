@@ -1,0 +1,13 @@
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #292c2f;
+    display: flex;
+    justify-content: center;
+}
+.gallery-container {
+    width: 80%;
+    background-color: white;
+    margin-top: 100px;
+    padding: 16px;
+}
