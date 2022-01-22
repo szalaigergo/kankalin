@@ -14,7 +14,26 @@
 .gallery {
     width: 100%;
 }
-
+p {
+  font-size: large;
+}
+h2 {
+  text-align: center;
+  color: #AC3900;
+}
+h1 {
+  color: #AC3900;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+}
+.boxes .first img {
+  width: 100%;
+}
+.tender-ids {
+  font-size: large;
+}
 /* imported */
 
 * {

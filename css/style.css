@@ -31,6 +31,12 @@ p {
     padding: 10px;
 }
 
+.divider {
+    border-top: solid 3px #bbb;
+    margin: 12px 0;
+    height: 1px;
+  }
+
 nav {
     position: fixed;
     height: auto;
