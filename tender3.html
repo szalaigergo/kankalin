@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kankalin NTE | Főoldal</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/style_contact.css" type="text/css" />
+    <link rel="stylesheet" href="css/style_tender.css" type="text/css" />
     <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css" type="text/css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
@@ -22,13 +22,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/icon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <style>
-    </style>
 </head>
 
 <body>
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
@@ -39,6 +35,8 @@
             js.src = 'https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v3.1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+    <script src="js/gallery.js"></script>
+
 
     <header>
         <nav class='cf'>
@@ -83,61 +81,98 @@
 
     </header>
     <main>
-        <video autoplay muted loop id=frisses>
-            <source src="img/daf_frisses_1.mp4" type="video/mp4">
-        </video>
+        <div class="main-wrapper">
+            <div class="gallery-container">
+                <h1>Közösségi ház működése 2021-ben</h1>
+                <div class="divider"></div>
+                <div class="boxes" style="grid-template-columns: 50% 50%;">
+                  <div class="second">
+                    <h2>Leírás</h2>
+                    <p>Ebben a pályázatban a Kankalin Közhasznú Néptánc Egyesület mint a Kankalin Néptáncegyüttes fenntartója  az együttes felnőtt és utánpótlás csoportjainak  2021 évi működési és szakmai feladataihoz  biztosította az anyagi támogatást. A célkitűzések között  kiemelt szerepet kapott  a Covid járvány lezárásai miatt  meggyengült közösségi élet megerősítése. Ezért több közösségi összetartozást erősítő programot szerveztünk.</p>
+                    <p>Pályázati azonosító: NEAO-KP-1-2021/5-000074-VAL-ELS/002 pályázat_ Kanklin Közösségi ház működése 2021-ben</p>
+                  </div>
+                  <!-- <div class="first">
+                    <img src="img/tender2/low_csoori_alap_rgb.png">
+                  </div> -->
+                  <div class="third">
+                    <h2>
+                      Események
+                    </h2>
+                    <ul>
+                      <li>
+                        Húsvéti bringázás 2021.04.03. Helyszín: Csomorkányi templomrom. Programterv: 30 km-es kerékpártúra, húsvéti hagyományok megismertetése játékos kvíz feladatokkal.
+                      </li>
+                      <li>Kankalin majális: 2021.05.15.  Helyszín: Hódmezővásárhely Nyár u. 56. Székház. Családi  bográcsozás, családi  ügyességi vetélkedő ,májusfa állítás.</li>
+                      <li>Kankalin tábor 2021.06.28-07.02 Helyszín: Hódmezővásárhely Nyár u. 56.  Az együttes 2021-ben  megszervezte az együttes felnőtt tagjai gyermekeinek és más a néptánc, népi játékok, hagyományőrzés iránt érdeklődő gyermekek részére az egy hetes napközis jellegű táborát.</li>
+                      <li>Az  pályázatból megvalósult  a székház régóta esedékes tisztasági festése és az ezt követő nagytakarítás,és  beszerzésre került  a magas színvonalú oktatáshoz szükséges  14,5m<sup>2</sup> tükör. 7 pár lábbeli pótlására is lehetőség adódott.
+                      </li>
+                      <li>Az utánpótlás nevelésére minden lehetőséget megragad az együttes vezetősége, ezért az iskolakezdés a gyermek csoportok szervezésének az ideje, amit most egy helyi iskolában is megtehettünk,és ehhez szükséges terembérleti díjat finanszírozzák.</li>
+                      <li>Felnőtt néptánc oktatáshoz terembérlés 2 alkalommal  Helyszín: Bessenyei Művelődési Központ Hódmezővásárhely</li>
+                      <li>Családi nap 2021.08.28. Helyszín: Tájház   sátorbérlés</li>
+                    </ul>
+                  </div>
+                </div>
 
-        <div id="landing_contact">
-            <div class="container">
-                <h1>Elérhetőségeink</h1>
-                <div class="mapandstuff">
-                    <div id="mapcontainer">
-                        <div id="map"></div>
-                        <script src="js/google.js"></script>
-                        <script
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3egZg2Wd1VmDTeK9pN4Zn71_f7fCixzg&callback=initMap"
-                            async defer></script>
-
+                <div class="divider"></div>
+                
+                <div class="gallery">
+                    <div class="row">
+                        <div class="column">
+                          <img src="img/tender3/resized/1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="img/tender3/resized/2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="img/tender3/resized/3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
                     </div>
-                    <div id="contacts">
-                        <div>
-                            <i class="fa fa-map-marker"></i>
-                            <p><span>Próbaterem: Nyár utca 56.</span> Hódmezővásárhely</p>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="img/tender3/1.png" style="width:100%">
+                          </div>
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="img/tender3/2.png" style="width:100%">
+                          </div>
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="img/tender3/3.png" style="width:100%">
+                          </div>
+                      
+                          
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                      
+                      
+                          <div class="column">
+                            <img class="demo cursor" src="img/tender3/1.png" style="width:100%" onclick="currentSlide(1)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="img/tender3/2.png" style="width:100%" onclick="currentSlide(2)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="img/tender3/3.png" style="width:100%" onclick="currentSlide(3)">
+                          </div>
+                          
                         </div>
+                      </div>
 
-                        <div>
-                            <i class="fas fa-address-card"></i>
-                            <p>Kankalin Közhasznú Néptánc Egyesület
-                                <br>Székhely: 6800 Hódmezővásárhely, Nyár utca 56.
-                                <br>Adószám: 18479658-1-06</p>
-                        </div>
+                </div>
 
-                        <div>
-                            <i class="fa fa-phone"></i>
-                            <p>+36304459856</p>
-                        </div>
-
-                        <div>
-                            <i class="fa fa-envelope"></i>
-                            <p><a href="mailto:kankalin.neptancegyuttes@gmail.com">kankalin.neptancegyuttes@gmail.com</a></p>
-                        </div>
-
-                        <div>
-                            <i class="fab fa-facebook-square"></i>
-                            <p><a
-                                    href="https://www.facebook.com/kankalin.neptancegyuttes/">/kankalin.neptancegyuttes/</a>
-                            </p>
-                        </div>
-
-                        <div class="footer-center"></div>
-                    </div>
                 </div>
             </div>
-
         </div>
-
     </main>
-
 
 
     <footer class="footer-distributed">
