@@ -34,6 +34,9 @@ h1 {
 .tender-ids {
   font-size: large;
 }
+.third ul li{
+  padding: 3px
+}
 /* imported */
 
 * {
